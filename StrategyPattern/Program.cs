@@ -21,7 +21,6 @@ switch (duck)
         strategyQuack = new Squeak();
         break;
     case "5":
-        go = false;
         break;
     default:
         Console.WriteLine("Input non valido");

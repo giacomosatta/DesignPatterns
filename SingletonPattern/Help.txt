@@ -1,0 +1,15 @@
+Il Singleton è un design pattern creazionale che garantisce che una classe abbia una sola istanza e fornisce un punto globale di accesso a tale istanza. Questo è utile quando si desidera limitare il numero di istanze di una classe per garantire che ci sia sempre una sola istanza disponibile globalmente.
+
+Il pattern Singleton è utile in situazioni in cui è necessario garantire che una sola istanza di una classe sia presente nel sistema e che vi sia un punto globale di accesso a tale istanza. Alcuni casi in cui il pattern Singleton può essere utile includono:
+
+    - Connessioni al database o risorse esterne: Se si gestiscono connessioni al database o a risorse esterne, potrebbe essere vantaggioso avere una sola istanza che gestisca tali connessioni in modo da evitare sprechi di risorse e garantire la coerenza delle connessioni.
+
+    - Gestione delle configurazioni: Se la tua applicazione ha configurazioni globali o oggetti di configurazione che devono essere accessibili da diverse parti del codice, il Singleton può fornire un modo centralizzato per gestire tali configurazioni.
+
+    - Logging: Nel caso della registrazione di eventi o messaggi, potrebbe essere desiderabile avere un'unica istanza responsabile della registrazione, facilitando il controllo e la configurazione del sistema di logging.
+
+    - Cache: Se si desidera implementare una cache globale in modo che i dati comuni siano accessibili da più parti del codice, un Singleton potrebbe essere utilizzato per gestire la cache.
+
+    - Gestione di risorse condivise: Se hai risorse condivise che devono essere condivise tra più parti del tuo programma, un Singleton può aiutare a garantire l'accesso coerente e la gestione di tali risorse.
+
+Tuttavia, è importante notare che l'uso del pattern Singleton dovrebbe essere valutato attentamente, in quanto può portare a problemi come accoppiamento stretto, difficoltà di test e potenziali problemi di concorrenza. In alcuni casi, potrebbero essere preferibili approcci diversi, come l'iniezione delle dipendenze o l'uso di oggetti con ambito di vita gestito diversamente.
